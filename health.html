@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Smart Cattle Management System</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="health.html">Health</a>
+        <a href="#">Gaushala</a>
+    </nav>
+</header>
+
+<section class="health-section">
+    <h2>Cattle Health Tracker</h2>
+
+    <label>
+        <input type="checkbox" id="vaccinated">
+        Vaccination Completed
+    </label>
+
+    <br><br>
+
+    <label>
+        <input type="checkbox" id="dewormed">
+        Deworming Completed
+    </label>
+
+    <br><br>
+
+    <button onclick="checkHealth()">Check Health Status</button>
+
+    <h3 id="healthResult"></h3>
+</section>
+
+<script src="script.js"></script>
+<footer class="footer">
+    <p>© 2026 GauRakshak AI | Built for Hackathon Innovation</p>
+</footer>
+</body>
+</html>

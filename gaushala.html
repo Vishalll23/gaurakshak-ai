@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gaushala Reporting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Smart Cattle Management System</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="health.html">Health</a>
+        <a href="gaushala.html">Gaushala</a>
+    </nav>
+</header>
+
+<section class="gaushala-section">
+    <h2>Report Stray Cattle</h2>
+
+    <label>Location:</label>
+    <input type="text" id="location" placeholder="Enter location">
+
+    <br><br>
+
+    <label>Condition:</label>
+    <select id="condition">
+        <option value="injured">Injured</option>
+        <option value="hungry">Hungry</option>
+        <option value="wandering">Wandering on road</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="submitReport()">Submit Report</button>
+
+    <h3>Reports:</h3>
+    <ul id="reportList"></ul>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Cattle ID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>GauRakshak AI - Digital Cattle ID</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="health.html">Health</a>
+        <a href="gaushala.html">Gaushala</a>
+        <a href="dashboard.html">Digital ID</a>
+    </nav>
+</header>
+
+<section class="dashboard-section">
+    <h2>Generate Digital Cattle ID</h2>
+
+    <label>Owner Name:</label>
+    <input type="text" id="ownerName" placeholder="Enter owner name">
+
+    <br><br>
+
+    <label>Select Breed:</label>
+    <select id="breedSelect">
+    <option value="Gir">Gir</option>
+    <option value="Sahiwal">Sahiwal</option>
+    <option value="Murrah">Murrah</option>
+</select>
+
+<br><br>
+
+<button onclick="generateID()">Generate ID</button>
+
+<div id="idCard"></div>
+
+<hr>
+
+<h2>System Analytics</h2>
+
+<div id="analytics"></div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

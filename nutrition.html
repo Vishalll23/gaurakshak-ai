@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nutrition Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Smart Cattle Management System</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="#">Health</a>
+        <a href="#">Gaushala</a>
+    </nav>
+</header>
+
+<section class="nutrition-section">
+    <h2>Nutrition Calculator</h2>
+
+    <label>Milk Production (Liters/day):</label>
+    <input type="number" id="milk" placeholder="Enter milk in liters">
+
+    <br><br>
+
+    <label>Select Budget:</label>
+    <select id="budget">
+        <option value="low">Low Budget</option>
+        <option value="medium">Medium Budget</option>
+        <option value="high">High Budget</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateNutrition()">Calculate</button>
+
+    <h3 id="result"></h3>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

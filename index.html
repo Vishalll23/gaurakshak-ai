@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GauRakshak AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <h1>🐄 GauRakshak AI</h1>
+        <p class="tagline">Protecting Livestock with Technology</p>
+    </div>
+
+    <nav>
+        <a href="breeds.html">Breeds</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="health.html">Health</a>
+        <a href="gaushala.html">Gaushala</a>
+        <a href="dashboard.html">Digital ID</a>
+        <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2><span id="typing"></span></h2>
+        <p>
+            AI-powered digital solution for cattle nutrition,
+            health monitoring, stray reporting, and theft prevention.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="dashboard.html" class="btn-primary">Generate Digital ID</a>
+            <a href="nutrition.html" class="btn-secondary">Plan Nutrition</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="features">
+    <h2>Our Core Features</h2>
+
+    <div class="feature-box reveal">
+        🥬 Budget-Based Nutrition Planning
+    </div>
+
+    <div class="feature-box">
+        🩺 Health Risk Monitoring
+    </div>
+
+    <div class="feature-box">
+        🚨 Theft & Missing Alert System
+    </div>
+
+    <div class="feature-box">
+        📊 Smart Analytics Dashboard
+    </div>
+<section class="ai-section">
+    <h2>🤖 GauRakshak AI Companion</h2>
+
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-message ai-message">
+            Hello! I am your AI cattle assistant. Ask me in Hindi, English, or Marathi.
+        </div>
+    </div>
+
+    <div class="chat-input-area">
+        <input type="text" id="aiInput" placeholder="Type your problem here...">
+        <button onclick="askAI()">Send</button>
+    </div>
+</section>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
